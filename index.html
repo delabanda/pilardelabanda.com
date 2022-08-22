@@ -1,9 +1,71 @@
 <html>
-  <head>
-    <title>pilardelabanda.com</title>
-    <meta http-equiv="refresh" content="0; URL=https://delabanda.com" />
-  </head>
-  <body>
-    <a href="https://www.linkedin.com/in/pilardelabanda/">Pilar de la Banda @ LinkedIn</a>
-  </body>
+
+<head>
+  <title>pilardelabanda.com</title>
+  <meta http-equiv="refresh" content="0; URL=https://delabanda.com">
+  <style type="text/css">
+    body {
+      background-color: #2461F4;
+      margin: 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #progress {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      height: 10px;
+      background-color: white;
+      width: 100vw;
+      animation-name: progress;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+    }
+    @keyframes progress {
+      from { width: 0vw; }
+      to { width: 100vw; }
+    }
+    #fallback {
+      opacity: 0;
+      animation-name: fallback; 
+      animation-duration: 0.5s;
+      animation-delay: 3s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+
+      font-family: sans-serif;
+      color: white;
+      font-size: 24px;
+      font-weight: 100;
+      text-align: center;
+    }
+    #fallback strong {
+      font-weight: 400;
+    }
+    #fallback small {
+      font-size: 16px;
+    }
+    @keyframes fallback {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="progress"></div>
+  <div id="fallback">
+    <a href="https://delabanda.com">
+      <strong>Pilar de la Banda</strong> Brand & Product Design<br>
+      <small>delabanda.com</small>
+    </a>
+  </div>
+</body>
+
 </html>
